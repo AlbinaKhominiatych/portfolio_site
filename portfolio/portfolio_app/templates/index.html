@@ -1,10 +1,44 @@
+<!-- base.html -->
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Моя сторінка</title>
+    <meta charset="UTF-8">
+    <title>CV - Albina Khominiatych</title>
+    <style>
+        /* Додайте стилі для оформлення вашого CV */
+    </style>
 </head>
 <body>
-  <h1>Вітаю на моїй сторінці!</h1>
-  <p>Це приклад веб-контенту.</p>
+    <header>
+        <h1>Albina Khominiatych</h1>
+    </header>
+          <section id="photo">
+            <img src="{{ MEDIA_URL }}myCV_photo.jpg" alt="My Photo">
+          </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>Job 1</li>
+            <li>Job 2</li>
+            <!-- Додайте додаткові пункти досвіду роботи -->
+        </ul>
+    </section>
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+            <li>Email: your@email.com</li>
+            <li>Phone: 123-456-7890</li>
+            <!-- Додайте додаткові контактні дані -->
+        </ul>
+    </section>
+    <section id="expertise">
+        <h2>Expertise</h2>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <!-- Додайте додаткові навички -->
+        </ul>
+    </section>
 </body>
 </html>
