@@ -7,15 +7,46 @@
     <title>CV - Albina Khominiatych</title>
     <style>
         /* Додайте стилі для оформлення вашого CV */
+        #photo {
+            float: left;
+            margin-right: 20px;
+        }
+        #photo img {
+            width: 200px;
+            height: 200px;
+        }
+        #info {
+            overflow: hidden;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        #info h2 {
+            font-size: 24px;
+        }
+        #info p {
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Albina Khominiatych</h1>
     </header>
-          <section id="photo">
+    <section id="info">
+        <div id="photo">
             <img src="{{ MEDIA_URL }}myCV_photo.jpg" alt="My Photo">
-          </section>
+        </div>
+        <div>
+            <p>
+                I am an enthusiastic programmer who is always eager to learn and improve.
+                I have a quick ability to grasp new tools and technologies, which allows me to adapt effectively to changes in the industry.
+                My analytical mindset enables me to approach problems from different perspectives and find efficient solutions.
+                I consistently maintain high motivation to achieve set goals and am passionate about creating high-quality software.
+                My drive for learning and continuous growth helps me thrive in the field of programming and adapt to new challenges.
+                I am ready to join a team to collaboratively work on exciting projects and achieve success.
+            </p>
+        </div>
+    </section>
     <section id="experience">
         <h2>Experience</h2>
         <ul>
