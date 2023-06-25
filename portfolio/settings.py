@@ -136,4 +136,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['morning-chamber-43130-d269508985fd.herokuapp.com']
+ALLOWED_HOSTS = ['morning-chamber-43130-d269508985fd.herokuapp.com', 'khominiatych-321e1455c8a2.herokuapp.com', 'localhost', '127.0.0.1']
+
