@@ -5,7 +5,6 @@ from django.conf.urls.static import static
 
 
 
-
 urlpatterns = [
     path('', IndexView.as_view(), name='home'),
     path('projects/', ProjectListView.as_view(), name='project-list'),
