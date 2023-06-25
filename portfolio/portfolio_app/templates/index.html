@@ -44,11 +44,28 @@
         header {
             text-align: top;
         }
-        #experience h2,
         #contacts h2,
         #expertise h2 {
             margin-left: 20px;
          }
+         #experience {
+            border-top: 5px solid lightgray;
+            padding-top: 5px;
+        }
+        #experience .left-column {
+            width: 30%;
+            float: left;
+            font-size: 14px;
+        }
+        #experience .right-column {
+            width: 70%;
+            float: right;
+        }
+        #experience::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
     </style>
 </head>
@@ -58,20 +75,11 @@
             <div id="photo">
                 <img src="{{ MEDIA_URL }}myCV_photo.jpg" alt="My Photo">
             </div>
-            <section id="experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li>Job 1</li>
-                    <li>Job 2</li>
-                    <!-- додаткові пункти досвіду роботи -->
-                </ul>
-            </section>
             <section id="contacts">
                 <h2>Contacts</h2>
                 <ul>
                     <li>Email: hominyatichalbina@gmail.com</li>
                     <li>Phone: +380 99 79 110 16</li>
-
                 </ul>
             </section>
             <section id="expertise">
@@ -97,6 +105,23 @@
                     I am ready to join a team to collaboratively work on exciting projects and achieve success.
                 </p>
             </div>
+            <section id="experience">
+                <header>
+                <h2>EXPERIENCE</h2>
+                </header>
+                <div class="left-column">
+                    <p>2021-2023</p>
+                    <p>3 years</p>
+                </div>
+                <div class="right-column">
+                    <h2>Programming Teacher, Head of the Department at the Small Computer Academy (SCA) | ItStep Academy</h2>
+                    <ul>
+                        <li>Taught programming to children and adults, covering the fundamentals of algorithmization and Object-Oriented Programming (OOP) in Python.</li>
+                        <li>Demonstrated effective communication and interpersonal skills to address students' questions, provide guidance, and facilitate productive discussions.</li>
+                        <li>Taught students in the age range of 16 to 50, adapting teaching methods to different learning styles and abilities, which demonstrates my ability to adapt to any challenges.</li>
+                    </ul>
+                </div>
+            </section>
         </section>
     </div>
 </body>
